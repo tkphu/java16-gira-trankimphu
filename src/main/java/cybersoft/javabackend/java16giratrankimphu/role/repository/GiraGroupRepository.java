@@ -10,4 +10,5 @@ import cybersoft.javabackend.java16giratrankimphu.role.model.GiraGroup;
 @Repository
 public interface GiraGroupRepository extends JpaRepository<GiraGroup, UUID> {
 
+
 }

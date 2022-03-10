@@ -10,8 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class GiraGroupDTO {
-	private UUID id;
-	
+
 	@Size(min = 5, max = 36, message = "Group Code must be longer than 5 characters.")
 	private String code;
 	
