@@ -20,6 +20,3 @@ spring:
     enabled: true
     driver-class-name: org.postgresql.Driver
     
-
-server:
-  port: 8070
