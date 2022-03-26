@@ -19,3 +19,5 @@ spring:
   flyway:
     enabled: true
     driver-class-name: org.postgresql.Driver
+    
+      

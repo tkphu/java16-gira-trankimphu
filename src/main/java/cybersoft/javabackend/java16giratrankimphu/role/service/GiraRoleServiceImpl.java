@@ -22,7 +22,6 @@ public class GiraRoleServiceImpl implements GiraRoleService {
 
 	@Override
 	public GiraRole save(GiraRoleDTO dto) {
-		// map dto to entity
 		GiraRole role = GiraRoleMapper.INSTANCE.mapToEntity(dto);
 		return repository.save(role);
 	}

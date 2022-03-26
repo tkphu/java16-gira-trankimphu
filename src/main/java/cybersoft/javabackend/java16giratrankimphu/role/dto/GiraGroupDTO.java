@@ -11,9 +11,9 @@ import lombok.Setter;
 @Setter
 public class GiraGroupDTO {
 
-	@Size(min = 5, max = 36, message = "Group Code must be longer than 5 characters.")
+	@Size(min = 5, max = 36, message = "{group.code.size}")
 	private String code;
 	
-	@NotBlank(message = "Description must be not blank.")
+	@NotBlank(message = "{group.description.notblank}")
 	private String description;
 }

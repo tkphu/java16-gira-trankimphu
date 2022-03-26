@@ -6,7 +6,6 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,21 +14,26 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cybersoft.javabackend.java16giratrankimphu.common.ulti.ErrorHelper;
 import cybersoft.javabackend.java16giratrankimphu.common.ulti.ResponseHelper;
 import cybersoft.javabackend.java16giratrankimphu.role.dto.GiraGroupDTO;
 import cybersoft.javabackend.java16giratrankimphu.role.dto.GiraGroupWithRolesDTO;
 import cybersoft.javabackend.java16giratrankimphu.role.service.GiraGroupService;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
-@RequestMapping("groups")
+@RequestMapping("api/v1/groups")
 public class GiraGroupController {
 	@Autowired
 	private GiraGroupService service;
 	
 	@GetMapping
 	public Object findAllGroups() {
+		log.info("Find all gira groups STARTED");
+		log.debug("calling GiraGroupService.findAllDto()");
 		List<GiraGroupDTO> groups = service.findAllDto();
-		
+		log.debug("result:{}, groups");
+		log.info("Find all gira groups STOPPED");
 		return ResponseHelper.getResponse(groups, HttpStatus.OK);
 	}
 	

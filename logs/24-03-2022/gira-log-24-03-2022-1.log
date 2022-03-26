@@ -1,0 +1,5 @@
+19:43:19 [background-preinit] INFO    --- o.h.v.i.u.Version - HV000001: Hibernate Validator 6.2.2.Final
+19:43:19 [restartedMain] INFO    --- c.j.j.Java16GiraTrankimphuApplication - Starting Java16GiraTrankimphuApplication using Java 17.0.2 on TKP-PC with PID 9296 (E:\workspace\java16-gira-trankimphu\target\classes started by TKP in E:\workspace\java16-gira-trankimphu)
+19:43:19 [restartedMain] INFO    --- c.j.j.Java16GiraTrankimphuApplication - No active profile set, falling back to 1 default profile: "default"
+19:43:19 [restartedMain] INFO    --- o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:43:19 [restartedMain] INFO    --- o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
